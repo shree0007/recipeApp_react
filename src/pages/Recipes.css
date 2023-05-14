@@ -1,0 +1,23 @@
+.recipes {
+    min-height: 100vh;
+
+
+}
+
+.recipes h3 {
+    color: black;
+}
+
+.recipes .cards {
+    margin: 3rem 0 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.recipes input {
+    width: 250px;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}

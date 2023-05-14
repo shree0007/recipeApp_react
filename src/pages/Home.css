@@ -1,0 +1,33 @@
+.home {
+    min-height: 100vh;
+
+}
+
+
+.nav-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.5rem;
+    text-decoration: none;
+}
+
+.nav-card {
+    width: 400px;
+    padding: 1rem;
+    border: 0.4px solid gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #b4d4f4;
+}
+
+.nav-cards a {
+    text-decoration: none;
+    color: orangered;
+}
+
+.nav-card h4 {
+    text-shadow: 0.1px 0.1px #333;
+}
+
+.nav-card p {
+    font-family: sans-serif;
+}

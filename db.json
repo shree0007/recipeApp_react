@@ -1,0 +1,85 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "pizza",
+      "author": "James Bond",
+      "country": "Italy",
+      "description": "Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.",
+      "image": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+      "ingredients": [
+        {
+          "ingredient": "flour",
+          "quantity": "2 cup"
+        },
+        {
+          "ingredient": "chiken",
+          "quantity": "100g"
+        },
+        {
+          "ingredient": "cheese",
+          "quantity": "100g"
+        },
+        {
+          "ingredient": "onions and tomatoes",
+          "quantity": "2 kpl each"
+        }
+      ],
+      "instructions": "To make pizza, you'll need some dough, tomato sauce, cheese, and any toppings you desire. Begin by rolling out the dough into a round shape, and spread tomato sauce over it. Sprinkle shredded cheese and toppings over the sauce, then bake the pizza in a preheated oven for 10-15 minutes or until the crust is golden brown. Finally, slice and serve your delicious homemade pizza!"
+    },
+    {
+      "id": 2,
+      "name": "noodles",
+      "author": "Jung-hoon",
+      "country": "Korea",
+      "description": "Korean noodles, also known as 'guksu' in Korean, are a type of thin, wheat-based noodles commonly used in Korean cuisine. They can be served hot or cold, and are often used in soups, stir-fries, and salads. Korean noodles are a popular and versatile ingredient in Korean cuisine, and are enjoyed by many around the world.",
+      "image": "https://images.pexels.com/photos/2347383/pexels-photo-2347383.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "ingredients": [
+        {
+          "ingredient": "korean dried noodles",
+          "quantity": "200g"
+        },
+        {
+          "ingredient": "chicken",
+          "quantity": "150g"
+        },
+        {
+          "ingredient": "soy sauce",
+          "quantity": "2 tablespoons"
+        },
+        {
+          "ingredient": "garlic cloves",
+          "quantity": "3, minced"
+        }
+      ],
+      "instructions": "To prepare the noodles, bring a pot of salted water to a boil. Add the noodles and cook for 3-4 minutes, stirring occasionally, until they are tender but still slightly firm. Drain the noodles and rinse them under cold water.Finally, serve the Korean noodles with your choice of toppings and sauces, such as sliced beef, mushrooms, carrots, scallions, soy sauce, and sesame oil. Enjoy as a delicious and satisfying meal!"
+    },
+    {
+      "id": 3,
+      "name": "momo",
+      "author": "Shree",
+      "country": "Nepal",
+      "description": "Nepalese momo is a type of dumpling that is a popular street food in Nepal and other parts of South Asia. It is typically filled with ground meat, such as chicken or lamb, and a variety of vegetables and spices, then steamed or fried. The dumpling is served with a spicy dipping sauce, which adds a tangy and flavorful kick to the dish. Nepalese momo is a delicious and hearty snack or meal that is perfect for any occasion.",
+      "image": "https://images.pexels.com/photos/3926123/pexels-photo-3926123.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "ingredients": [
+        {
+          "ingredient": "ground chicken meat",
+          "quantity": "500g"
+        },
+        {
+          "ingredient": "flour",
+          "quantity": "2 cups"
+        },
+        {
+          "ingredient": "onion",
+          "quantity": "1 medium sized"
+        },
+        {
+          "ingredient": "garlic",
+          "quantity": "4-5 cloves"
+        }
+      ],
+      "instructions": "The dough is rolled very thin, the filling is placed in the center, and then the momo is shaped and sealed into small packets, leaving some space for it to fill with broth that collects during steaming process. "
+    }
+  ]
+}
