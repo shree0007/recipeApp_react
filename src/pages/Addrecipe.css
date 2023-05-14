@@ -1,15 +1,17 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 1rem;
-    background-color: #f7f7f7;
-    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: khaki;
+    min-height: 100vh;
+    overflow: hidden;
+
+
 }
 
-
+.form h2 {
+    color: brown;
+    margin-bottom: 3rem;
+}
 
 
 input[type="text"],
@@ -20,6 +22,24 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 92%;
+
+
+}
+
+select {
+    width: 95%;
+}
+
+.removerecipe-btn {
+    background-color: #5a6268;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0.2rem;
+}
+
+.removerecipe-btn:hover {
+    background-color: #5a6268;
 }
 
 
@@ -53,6 +73,10 @@ button[type="button"] {
 
 button[type="button"]:hover {
     background-color: #5a6268;
+}
+
+form {
+    margin: auto;
 }
 
 form>div {

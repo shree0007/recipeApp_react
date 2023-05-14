@@ -12,7 +12,6 @@ const Recipes = () => {
     const [searchInput, setSearchInput] = useState('');
 
 
-
     useEffect(() => {
 
         axios
@@ -47,7 +46,10 @@ const Recipes = () => {
                         id={recipe.id}
                         name={recipe.name}
                         image={recipe.image}
-                        description={recipe.description}
+                        country={recipe.country}
+                        flag={recipe.country.flag}
+
+
                     />
 
                 )}

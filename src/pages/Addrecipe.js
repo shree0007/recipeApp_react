@@ -26,7 +26,7 @@ const Addrecipe = () => {
 
     const [postRecipe, setPostRecipe] = useState(false);
     const [id, setId] = useState();
-    const [recipe, setRecipe] = useState(cloneDeep(initialRecipe));
+    const [recipe, setRecipe] = useState(cloneDeep(initialRecipe)); //cloneDeep creates a deep copy of initialRecipe and is independent of original
 
 
 
