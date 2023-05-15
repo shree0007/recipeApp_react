@@ -47,7 +47,6 @@ const Recipes = () => {
                         name={recipe.name}
                         image={recipe.image}
                         country={recipe.country}
-                        flag={recipe.country.flag}
 
 
                     />
