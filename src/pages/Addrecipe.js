@@ -65,9 +65,18 @@ const Addrecipe = () => {
 
     const submitHandler = (event) => {
         event.preventDefault();
+
+        const updatedRecipe = {
+            ...recipe,
+            ingredients: ingredients.map((ingredient) => ({
+                ingredient: ingredient.ingredient,
+                quantity: ingredient.quantity
+            }))
+        };
+
         setPostRecipe(true);
         axios
-            .post("http://localhost:5000/recipes", recipe)
+            .post("http://localhost:5000/recipes", updatedRecipe)
             .then((res) => {
                 setId(res.data.id);
             })
@@ -75,8 +84,6 @@ const Addrecipe = () => {
                 alert("Server error");
             });
     };
-
-
 
     return (
         <div className='form'>

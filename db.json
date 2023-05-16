@@ -83,37 +83,46 @@
     },
     {
       "id": 4,
-      "name": "Burger",
-      "author": "Leonardo",
+      "name": "burger",
+      "author": "Oliver",
       "country": "United States",
       "description": "The American burger is a quintessential culinary icon that represents the heart of American comfort food. A juicy, flame-grilled beef patty serves as the centerpiece, nestled between two soft and toasted sesame seed buns. Topped with melted cheese, crisp lettuce, ripe tomatoes, tangy pickles, and a smear of mayo or ketchup, it creates a harmonious balance of flavors and textures. The first bite reveals a satisfying explosion of savory juices, while the combination of ingredients delivers a symphony of tastes that embodies indulgence and familiarity, making it a beloved classic across the United States and beyond.",
       "image": "https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=800",
       "ingredients": [
         {
           "ingredient": "ground beef",
-          "quantity": "250 g"
+          "quantity": "200 g"
         },
         {
           "ingredient": "hamburger buns",
           "quantity": "2 pcs"
-        }
-      ],
-      "instructions": " pepper. Shape into patties and cook for 4-5 minutes per side. Assemble on toasted buns with cheese, lettuce, tomato, pickles, onions, and coPreheat a grill or frying pan. Mix ground beef with salt and blackndiments. Serve immediately and enjoy your delicious American burger!"
-    },
-    {
-      "id": 5,
-      "name": "noodles",
-      "author": "dsda",
-      "country": "Azerbaijan",
-      "description": "dsa ddfdf",
-      "image": "https://images.pexels.com/photos/2347383/pexels-photo-2347383.jpeg?auto=compress&cs=tinysrgb&w=800",
-      "ingredients": [
+        },
         {
-          "ingredient": "",
-          "quantity": ""
+          "ingredient": "cheese",
+          "quantity": "2 pcs"
+        },
+        {
+          "ingredient": "mayonnaise",
+          "quantity": "1.5 tablespoons"
+        },
+        {
+          "ingredient": "tomato slices",
+          "quantity": "2 pcs"
+        },
+        {
+          "ingredient": "onion rings",
+          "quantity": "2 pcs"
+        },
+        {
+          "ingredient": "pickles",
+          "quantity": "3 pcs"
+        },
+        {
+          "ingredient": "lettuce",
+          "quantity": "2 pcs"
         }
       ],
-      "instructions": "fddfdsdffd"
+      "instructions": "Preheat a grill or frying pan. Mix ground beef with salt and black pepper. Shape into patties and cook for 4-5 minutes per side. Assemble on toasted buns with cheese, lettuce, tomato, pickles, onions, and condiments.Serve immediately and enjoy your delicious American burger!"
     }
   ]
 }
