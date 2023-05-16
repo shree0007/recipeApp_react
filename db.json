@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "pizza",
-      "author": "James Bond",
+      "author": "Lorenzo",
       "country": "Italy",
       "description": "Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.",
       "image": "https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
@@ -31,7 +31,7 @@
       "id": 2,
       "name": "noodles",
       "author": "Jung-hoon",
-      "country": "Korea",
+      "country": "South Korea",
       "description": "Korean noodles, also known as 'guksu' in Korean, are a type of thin, wheat-based noodles commonly used in Korean cuisine. They can be served hot or cold, and are often used in soups, stir-fries, and salads. Korean noodles are a popular and versatile ingredient in Korean cuisine, and are enjoyed by many around the world.",
       "image": "https://images.pexels.com/photos/2347383/pexels-photo-2347383.jpeg?auto=compress&cs=tinysrgb&w=800",
       "ingredients": [
@@ -80,6 +80,40 @@
         }
       ],
       "instructions": "The dough is rolled very thin, the filling is placed in the center, and then the momo is shaped and sealed into small packets, leaving some space for it to fill with broth that collects during steaming process. "
+    },
+    {
+      "id": 4,
+      "name": "Burger",
+      "author": "Leonardo",
+      "country": "United States",
+      "description": "The American burger is a quintessential culinary icon that represents the heart of American comfort food. A juicy, flame-grilled beef patty serves as the centerpiece, nestled between two soft and toasted sesame seed buns. Topped with melted cheese, crisp lettuce, ripe tomatoes, tangy pickles, and a smear of mayo or ketchup, it creates a harmonious balance of flavors and textures. The first bite reveals a satisfying explosion of savory juices, while the combination of ingredients delivers a symphony of tastes that embodies indulgence and familiarity, making it a beloved classic across the United States and beyond.",
+      "image": "https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "ingredients": [
+        {
+          "ingredient": "ground beef",
+          "quantity": "250 g"
+        },
+        {
+          "ingredient": "hamburger buns",
+          "quantity": "2 pcs"
+        }
+      ],
+      "instructions": " pepper. Shape into patties and cook for 4-5 minutes per side. Assemble on toasted buns with cheese, lettuce, tomato, pickles, onions, and coPreheat a grill or frying pan. Mix ground beef with salt and blackndiments. Serve immediately and enjoy your delicious American burger!"
+    },
+    {
+      "id": 5,
+      "name": "noodles",
+      "author": "dsda",
+      "country": "Azerbaijan",
+      "description": "dsa ddfdf",
+      "image": "https://images.pexels.com/photos/2347383/pexels-photo-2347383.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "ingredients": [
+        {
+          "ingredient": "",
+          "quantity": ""
+        }
+      ],
+      "instructions": "fddfdsdffd"
     }
   ]
 }

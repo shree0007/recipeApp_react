@@ -44,24 +44,42 @@ const Seemore = () => {
             <div className='content1'>
                 <h1> {recipeDescription.name}</h1>
                 <p>Author: {recipeDescription.author}</p>
-                <img src={recipeDescription.image} alt={recipeDescription.name} />
-                <img src={flag} alt={recipeDescription.country} />
+                <div className='images'>
+                    <img id='flag' src={flag} alt={recipeDescription.country} />
+                    <img id='recipe-pic' src={recipeDescription.image} alt={recipeDescription.name} />
+                </div>
                 <div>
                     <h4>About this Recipe:</h4>
-                    <p>{recipeDescription.description}</p>
+                    <p id='description'>{recipeDescription.description}</p>
                 </div>
             </div>
             <div className='content2'>
                 <div className='ingredients'>
+
                     <h4>Ingredients:</h4>
-                    {recipeDescription.ingredients && recipeDescription.ingredients.map((ingredient) => (
-                        <li>{ingredient.ingredient} - {ingredient.quantity}</li>
-                    ))}
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+
+                        {recipeDescription.ingredients && recipeDescription.ingredients.map((ingredient) => (
+                            <tbody>
+                                <tr>
+                                    <td>{ingredient.ingredient}</td>
+                                    <td>{ingredient.quantity}</td>
+                                </tr>
+                            </tbody>
+
+                        ))}
+                    </table>
                 </div>
 
                 <div>
                     <h4>How to prepare:</h4>
-                    <p>{recipeDescription.instructions}</p>
+                    <p id='instructions'>{recipeDescription.instructions}</p>
                 </div>
 
                 <button onClick={() => navigate(-1)}>Back</button>
