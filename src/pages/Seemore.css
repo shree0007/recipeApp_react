@@ -7,11 +7,13 @@
     color: #333;
     display: flex;
     justify-content: space-between;
+
 }
 
 .content1 {
 
     width: 650px;
+
 }
 
 .content2 {
@@ -28,6 +30,12 @@
     color: #666;
 }
 
+.content1 #flag {
+    width: 80px;
+    height: 80px;
+}
+
+
 .seemore p {
     margin-bottom: 10px;
 }
@@ -35,6 +43,7 @@
 .seemore img {
     max-width: 100%;
     margin-bottom: 20px;
+
 }
 
 .seemore .ingredients {

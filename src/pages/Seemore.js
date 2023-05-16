@@ -11,44 +11,41 @@ const Seemore = () => {
     const [recipeDescription, setRecipeDescription] = useState([]);
 
     const [flag, setFlag] = useState("");
-
-
-
+    // hello
 
 
     useEffect(() => {
+        axios.get(`http://localhost:5000/recipes/`).then((data) => {
+            const totalRecipes = data.data;
+            const findRecipe = totalRecipes.find((recipe) => +recipe.id === +id);
+            setRecipeDescription(findRecipe);
+        });
+    }, [id]);
 
-        axios
-            .get(`http://localhost:5000/recipes/`)
-            .then((response) => {
-                const totalRecipes = (response.data);
-                const findRecipe = totalRecipes.find((recipe) => +recipe.id === +id);
-                setRecipeDescription(findRecipe)
-                // console.log(totalRecipes);
+    useEffect(() => {
+        if (recipeDescription && recipeDescription.country) {
+            axios
+                .get(`https://restcountries.com/v3.1/name/${recipeDescription.country}`)
+                .then((response) => {
+                    setFlag(response.data[0].flags.svg);
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        }
+    }, [recipeDescription]);
 
-
-                axios
-                    .get(`https://restcountries.com/v3.1/name/${recipeDescription.country}`)
-                    .then((response) => {
-                        setFlag(response.data[0].flags.svg)
-                    })
-                    .catch((error) => {
-                        console.log('error');
-                    });
-
-            })
-
-    }, [id, recipeDescription.country]);
-
+    if (!recipeDescription) {
+        return <div>Loading...</div>;
+    }
 
     return (
         <div className='seemore'>
             <div className='content1'>
                 <h1> {recipeDescription.name}</h1>
-                <p>Invented by: {recipeDescription.author}</p>
-                <img src={flag} alt={recipeDescription.country} />
-                <img src={recipeDescription.flag} alt={recipeDescription.country} />
+                <p>Author: {recipeDescription.author}</p>
                 <img src={recipeDescription.image} alt={recipeDescription.name} />
+                <img src={flag} alt={recipeDescription.country} />
                 <div>
                     <h4>About this Recipe:</h4>
                     <p>{recipeDescription.description}</p>

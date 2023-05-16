@@ -77,6 +77,7 @@ const Addrecipe = () => {
     };
 
 
+
     return (
         <div className='form'>
             {!postRecipe && (
@@ -154,7 +155,7 @@ const Addrecipe = () => {
 
             {postRecipe && (
                 <div>
-                    <p>Congratulations Recipe: {recipe.name} has been added successfully!</p>
+                    <p>Congratulations your recipe {recipe.name} has been added successfully!</p>
                     <div>
                         <NavLink to={`/${id}`}>
                             <button>See your recipe</button>
