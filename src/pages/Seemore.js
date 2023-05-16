@@ -10,6 +10,8 @@ const Seemore = () => {
     const navigate = useNavigate();
     const [recipeDescription, setRecipeDescription] = useState([]);
 
+    const [flag, setFlag] = useState("");
+
 
 
 
@@ -18,24 +20,34 @@ const Seemore = () => {
 
         axios
             .get(`http://localhost:5000/recipes/`)
-            .then((data) => {
-                const totalRecipes = (data.data);
+            .then((response) => {
+                const totalRecipes = (response.data);
                 const findRecipe = totalRecipes.find((recipe) => +recipe.id === +id);
                 setRecipeDescription(findRecipe)
-                console.log(totalRecipes);
+                // console.log(totalRecipes);
+
+
+                axios
+                    .get(`https://restcountries.com/v3.1/name/${recipeDescription.country}`)
+                    .then((response) => {
+                        setFlag(response.data[0].flags.svg)
+                    })
+                    .catch((error) => {
+                        console.log('error');
+                    });
 
             })
-            .catch((error) => {
-                console.log(error);
-            });
 
-    }, []);
+    }, [id, recipeDescription.country]);
+
 
     return (
         <div className='seemore'>
             <div className='content1'>
                 <h1> {recipeDescription.name}</h1>
-                <p>Author: {recipeDescription.author}</p>
+                <p>Invented by: {recipeDescription.author}</p>
+                <img src={flag} alt={recipeDescription.country} />
+                <img src={recipeDescription.flag} alt={recipeDescription.country} />
                 <img src={recipeDescription.image} alt={recipeDescription.name} />
                 <div>
                     <h4>About this Recipe:</h4>

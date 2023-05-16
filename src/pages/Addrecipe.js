@@ -76,11 +76,6 @@ const Addrecipe = () => {
             });
     };
 
-    const addNewRecipe = () => {
-        setPostRecipe(false);
-        setRecipe(cloneDeep(initialRecipe));
-        setIngredients([{ quantity: "", ingredient: "" }]);
-    };
 
     return (
         <div className='form'>
@@ -159,12 +154,12 @@ const Addrecipe = () => {
 
             {postRecipe && (
                 <div>
-                    <p>Recipe {recipe.name} has been added successfully!</p>
+                    <p>Congratulations Recipe: {recipe.name} has been added successfully!</p>
                     <div>
                         <NavLink to={`/${id}`}>
                             <button>See your recipe</button>
                         </NavLink>
-                        <button onClick={addNewRecipe}>Add another one</button>
+
                     </div>
                 </div>
             )}
