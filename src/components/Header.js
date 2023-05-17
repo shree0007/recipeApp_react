@@ -9,7 +9,7 @@ function Header(props) {
             <div className='logo-and-heading'>
                 <NavLink to="/"><img className='logo' src="./mylogo.png" alt="logo" /></NavLink>
 
-                <h3>RECIPIE MASTER</h3>
+                <h3>RECIPE MASTER</h3>
             </div>
 
             <nav className="nav">
