@@ -106,7 +106,7 @@ const Addrecipe = () => {
                         <label htmlFor="country">Country</label>
 
                         <select name="country" id='country' onChange={(event) => changeHandler(event)}>
-                            <option value="">Select a country</option>
+                            <option value=""></option>
                             {countryOptions.map(country => (
                                 <option key={country.code} value={country.code}>
                                     {country.name}
@@ -145,7 +145,7 @@ const Addrecipe = () => {
 
 
                                 />
-                                {clickAddIngredient && (<button className='removerecipe-btn' onClick={(event) => handleRemoveIngredient(event, i)}>x</button>)}
+                                {clickAddIngredient && (<button className='removeingredient-btn' onClick={(event) => handleRemoveIngredient(event, i)}>x</button>)}
                             </div>
                         ))}
 

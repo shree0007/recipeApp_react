@@ -13,19 +13,16 @@
 
     width: 650px;
     position: relative;
-    border: solid 2px gray;
     border-radius: 10px;
-    background-color: rgb(200, 190, 249);
+    background-image: linear-gradient(160deg, #46afec 0%, #90d6ce 100%);
     box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
 }
 
 .content2 {
-
     width: 600px;
     margin: auto;
-    border: solid 2px gray;
     border-radius: 10px;
-    background-color: rgb(193, 252, 195);
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
 }
 
