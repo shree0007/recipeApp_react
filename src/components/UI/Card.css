@@ -25,14 +25,10 @@
     position: absolute;
     top: 0;
     right: 0;
-
-
 }
-
 
 .recipes-card img:hover {
     transform: scale(1.05);
-
 }
 
 .card-btn {

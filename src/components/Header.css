@@ -10,21 +10,16 @@
 .logo-and-heading {
     display: flex;
     align-items: center;
-
 }
 
 .logo {
     width: 130px;
     height: 130px;
-
 }
 
 h3 {
     color: white;
-
 }
-
-
 
 .nav a {
     text-decoration: none;

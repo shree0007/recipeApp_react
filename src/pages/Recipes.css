@@ -1,7 +1,5 @@
 .recipes {
     min-height: 100vh;
-
-
 }
 
 .recipes h3 {
@@ -12,7 +10,6 @@
     margin: 3rem 0 0 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
 }
 
 .recipes input {

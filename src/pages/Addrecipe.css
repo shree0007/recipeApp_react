@@ -22,8 +22,6 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 92%;
-
-
 }
 
 select {
@@ -41,7 +39,6 @@ select {
 .removerecipe-btn:hover {
     background-color: #5a6268;
 }
-
 
 textarea {
     resize: vertical;

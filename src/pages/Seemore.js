@@ -11,7 +11,7 @@ const Seemore = () => {
     const [recipeDescription, setRecipeDescription] = useState([]);
 
     const [flag, setFlag] = useState("");
-    // hello
+
 
 
     useEffect(() => {
@@ -42,7 +42,7 @@ const Seemore = () => {
     return (
         <div className='seemore'>
             <div className='content1'>
-                <h1> {recipeDescription.name}</h1>
+                <h2>{recipeDescription.name}</h2>
                 <p>Author: {recipeDescription.author}</p>
                 <div className='images'>
                     <img id='flag' src={flag} alt={recipeDescription.country} />

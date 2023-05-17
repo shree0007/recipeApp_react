@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 h1 {
@@ -27,11 +26,9 @@ h1 {
     top: 14.5rem;
 }
 
-
 .hero-banner a {
     position: absolute;
     top: 18rem;
-
 }
 
 .hero-banner video {
