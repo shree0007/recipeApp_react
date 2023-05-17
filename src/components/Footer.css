@@ -2,11 +2,33 @@
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
     margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
 
+.icons {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.icons a {
+    color: white;
+}
+
+.icon {
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: orangered;
 }
 
 .footer p {
     font-size: small;
+    width: 80%;
+    margin-left: 7rem;
 }
