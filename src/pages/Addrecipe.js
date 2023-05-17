@@ -29,6 +29,7 @@ const Addrecipe = () => {
     const [postRecipe, setPostRecipe] = useState(false);
     const [id, setId] = useState();
     const [recipe, setRecipe] = useState(cloneDeep(initialRecipe)); //cloneDeep creates a deep copy of initialRecipe and is independent of original
+    const [clickAddIngredient, setClickAddIngredient] = useState(false);
 
 
 
@@ -39,14 +40,17 @@ const Addrecipe = () => {
     const handleAddIngredient = (event) => {
         event.preventDefault();
         setIngredients([...ingredients, { quantity: "", ingredient: "" }]);
+        setClickAddIngredient(true);
     };
 
     const handleRemoveIngredient = (event, i) => {
         event.preventDefault();
+        if (!clickAddIngredient) return;
         const newIngredients = [...ingredients];
         if (ingredients.length <= 1) return;
         newIngredients.splice(i, 1);
         setIngredients(newIngredients);
+
     };
 
 
@@ -141,7 +145,7 @@ const Addrecipe = () => {
 
 
                                 />
-                                <button className='removerecipe-btn' onClick={(event) => handleRemoveIngredient(event, i)}>x</button>
+                                {clickAddIngredient && (<button className='removerecipe-btn' onClick={(event) => handleRemoveIngredient(event, i)}>x</button>)}
                             </div>
                         ))}
 
