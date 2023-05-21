@@ -81,8 +81,8 @@ const Addrecipe = () => {
         setPostRecipe(true);
         axios
             .post("http://localhost:5000/recipes", updatedRecipe)
-            .then((res) => {
-                setId(res.data.id);
+            .then((response) => {
+                setId(response.data.id);
             })
             .catch((err) => {
                 alert("Server error");

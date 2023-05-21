@@ -9,14 +9,21 @@ import axios from 'axios';
 
 const Card = (props) => {
     const [flag, setFlag] = useState("");
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
+        setIsLoading(true)
         axios
             .get(`https://restcountries.com/v3.1/name/${props.country}`)
             .then((res) => {
                 setFlag(res.data[0].flags.svg)
+                setIsLoading(false)
             })
     }, [props.country])
+
+    if (isLoading) {
+        return <p>flag image Loading...</p>;
+    }
 
     return (
         <div className='recipes-card'>

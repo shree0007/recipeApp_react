@@ -9,16 +9,17 @@ import Card from '../components/UI/Card';
 const Recipes = () => {
 
     const [recipes, setRecipes] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
     const [searchInput, setSearchInput] = useState('');
 
 
     useEffect(() => {
-
+        setIsLoading(true);
         axios
             .get(`http://localhost:5000/recipes`)
             .then((response) => {
                 setRecipes(response.data);
-                console.log(response.data);
+                setIsLoading(false);
 
             })
             .catch((err) => alert("Server error"));
@@ -32,6 +33,10 @@ const Recipes = () => {
     const searchFilter = recipes.filter(recipe => {
         return recipe.name.includes(searchInput)
     })
+
+    if (isLoading) {
+        return <p>Loading...</p>
+    }
 
     return (
         <div className='recipes'>

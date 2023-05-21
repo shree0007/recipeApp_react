@@ -13,18 +13,18 @@ const Home = () => {
                 <div className='nav-card'>
 
                     <h4>Browse Recipes</h4>
-                    <p>Find your favourites in this collection.You can search recipies based on name or country</p>
+                    <p>Explore and uncover your preferred choices within this collection. You have the opportunity to search for recipes by name or country of origin.</p>
                     <Link to="recipes">All recipes</Link>
 
                 </div>
                 <div className='nav-card'>
                     <h4>Add Recipes</h4>
-                    <p>Recipe from your country is missing? No worries, add one !</p>
+                    <p>Is a recipe from your country not included? No need to worry, you can contribute and add one!</p>
                     <Link to="addrecipe">Add recipes</Link>
                 </div>
                 <div className='nav-card'>
                     <h4>Want to know more about our projects?</h4>
-                    <p>Please visit our programme homepage for more information</p>
+                    <p>For further details, kindly visit the homepage of our program.</p>
                     <Link to="https://en.bc.fi/">Business College Helsinki Homepage</Link>
                 </div>
             </div>
