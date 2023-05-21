@@ -1,0 +1,29 @@
+.about {
+    margin: auto;
+    padding: 2rem;
+}
+
+
+.about h2 {
+    text-align: left;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: x-large;
+
+
+}
+
+.about img {
+    width: 700px;
+    height: 450px;
+    float: left;
+    margin: 0 2rem 2rem 0;
+}
+
+.about p {
+    text-align: inherit;
+    line-height: 1.2;
+    text-align: justify;
+
+
+}

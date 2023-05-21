@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Addrecipe from './pages/Addrecipe';
 import Recipes from './pages/Recipes';
 import Seemore from './pages/Seemore';
+import About from './pages/About';
 import Layout from './pages/Layout';
 
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='recipes' element={<Recipes />} />
             <Route path='/:id' element={<Seemore />} />
             <Route path='addrecipe' element={<Addrecipe />} />
+            <Route path='about' element={<About />} />
 
 
           </Route>
