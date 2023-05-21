@@ -43,6 +43,3 @@ Built with:
 - Images from [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/)
 - Country flags from [Countries API](https://restcountries.com/)
 
-
-## Author
-- GitHub [@shree0007](https://github.com/shree0007)
