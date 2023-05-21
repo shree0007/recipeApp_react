@@ -57,3 +57,10 @@
     color: white;
     text-decoration: underline;
 }
+
+/* ***Mobile settings for max-width:414px*** */
+@media screen and (max-width: 414px) {
+    .recipes-card {
+        width: 260px;
+    }
+}

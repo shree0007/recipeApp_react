@@ -42,3 +42,16 @@
     font-size: 0.9rem;
     text-align: justify;
 }
+
+/* ***Mobile settings for max-width:414px*** */
+@media screen and (max-width: 414px) {
+
+    .nav-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-card {
+        width: 310px;
+    }
+}

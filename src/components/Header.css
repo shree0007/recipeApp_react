@@ -31,3 +31,31 @@ h3 {
 .nav a:hover {
     color: orangered;
 }
+
+/* ***Mobile settings for max-width:414px*** */
+@media screen and (max-width: 414px) {
+    .header {
+        padding: 10px;
+        height: 40px;
+    }
+
+    .logo-and-heading {
+        margin-top: 0.3rem;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    h3 {
+        font-size: xx-small;
+
+    }
+
+    .nav a {
+        font-size: 10px;
+        margin: 0 2px;
+    }
+}

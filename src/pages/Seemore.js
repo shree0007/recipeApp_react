@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from "axios";
-import './Seemore.css'
-
+import './Seemore.css';
 
 const Seemore = () => {
 
     const { id } = useParams();
     const navigate = useNavigate();
     const [recipeDescription, setRecipeDescription] = useState([]);
-
     const [flag, setFlag] = useState("");
-
-
 
     useEffect(() => {
         axios.get(`http://localhost:5000/recipes/`).then((data) => {
@@ -66,7 +62,7 @@ const Seemore = () => {
                         </thead>
 
                         {recipeDescription.ingredients && recipeDescription.ingredients.map((ingredient) => (
-                            <tbody>
+                            <tbody key={ingredient.ingredient}>
                                 <tr>
                                     <td>{ingredient.ingredient}</td>
                                     <td>{ingredient.quantity}</td>

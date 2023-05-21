@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import './Card.css';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
-
-
-
-
+import { Link } from 'react-router-dom';
+import './Card.css';
 
 const Card = (props) => {
     const [flag, setFlag] = useState("");
@@ -22,7 +18,7 @@ const Card = (props) => {
     }, [props.country])
 
     if (isLoading) {
-        return <p>flag image Loading...</p>;
+        return <p>Loading...</p>;
     }
 
     return (
@@ -31,9 +27,6 @@ const Card = (props) => {
             <img id='flag' src={flag} alt={props.country} />
             <h3>{props.name}</h3> <br></br>
             <div className='card-btn'><Link to={`/${props.id}`} >See more</Link></div>
-
-
-
         </div>
     );
 };

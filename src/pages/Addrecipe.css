@@ -1,7 +1,6 @@
 .form {
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: khaki;
     min-height: 100vh;
     overflow: hidden;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
@@ -91,6 +90,7 @@ form>div>input {
     flex-grow: 1;
 }
 
+/* ***settings for min-width:768px*** */
 @media screen and (min-width: 768px) {
     form {
         width: 50%;

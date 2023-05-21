@@ -1,12 +1,10 @@
 import React from 'react';
-import './Addrecipe.css';
 import { countries } from 'countries-list';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import cloneDeep from "lodash/cloneDeep";
 import { NavLink } from "react-router-dom";
-
-
+import './Addrecipe.css';
 
 const initialRecipe = {
     id: null,
@@ -28,14 +26,10 @@ const Addrecipe = () => {
 
     const [postRecipe, setPostRecipe] = useState(false);
     const [id, setId] = useState();
-    const [recipe, setRecipe] = useState(cloneDeep(initialRecipe)); //cloneDeep creates a deep copy of initialRecipe and is independent of original
+    const [recipe, setRecipe] = useState(cloneDeep(initialRecipe));
     const [clickAddIngredient, setClickAddIngredient] = useState(false);
-
-
-
     const [ingredients, setIngredients] = useState([{ quantity: "", ingredient: "" }]);
     const countryOptions = Object.values(countries).map(country => ({ name: country.name, code: country.alpha2 }));
-
 
     const handleAddIngredient = (event) => {
         event.preventDefault();
@@ -53,19 +47,15 @@ const Addrecipe = () => {
 
     };
 
-
     const handleIngredientChange = (i, event) => {
         const newIngredients = [...ingredients];
         newIngredients[i][event.target.name] = event.target.value;
         setIngredients(newIngredients);
     };
 
-
-
     const changeHandler = (event) => {
         setRecipe({ ...recipe, [event.target.name]: event.target.value });
     };
-
 
     const submitHandler = (event) => {
         event.preventDefault();
@@ -108,7 +98,7 @@ const Addrecipe = () => {
                         <select name="country" id='country' onChange={(event) => changeHandler(event)}>
                             <option value=""></option>
                             {countryOptions.map(country => (
-                                <option key={country.code} value={country.code}>
+                                <option key={country.name}>
                                     {country.name}
                                 </option>
 
@@ -125,15 +115,15 @@ const Addrecipe = () => {
                         <label>Ingredients</label>
                         {ingredients.map((ingredient, i) => (
                             <div key={i} >
+
                                 <input
                                     type="text"
                                     placeholder="Qunatity"
                                     name="quantity"
                                     value={ingredient.quantity}
                                     onChange={(event) => handleIngredientChange(i, event)}
-
-
                                 />
+
                                 <input
                                     type="text"
                                     placeholder="Ingredient"
@@ -141,11 +131,10 @@ const Addrecipe = () => {
                                     required
                                     value={ingredient.ingredient}
                                     onChange={(event) => handleIngredientChange(i, event)}
-
-
-
                                 />
+
                                 {clickAddIngredient && (<button className='removeingredient-btn' onClick={(event) => handleRemoveIngredient(event, i)}>x</button>)}
+
                             </div>
                         ))}
 
@@ -163,7 +152,6 @@ const Addrecipe = () => {
                 </div>
             )}
 
-
             {postRecipe && (
                 <div>
                     <p>Congratulations your recipe: {recipe.name} has been added successfully!</p>
@@ -176,10 +164,7 @@ const Addrecipe = () => {
                 </div>
             )}
 
-
-
         </div>
-
     );
 };
 

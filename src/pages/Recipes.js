@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './Recipes.css';
 import axios from 'axios';
 import Card from '../components/UI/Card';
-
-
+import './Recipes.css';
 
 
 const Recipes = () => {
@@ -11,7 +9,6 @@ const Recipes = () => {
     const [recipes, setRecipes] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [searchInput, setSearchInput] = useState('');
-
 
     useEffect(() => {
         setIsLoading(true);
@@ -29,7 +26,6 @@ const Recipes = () => {
     const searchInputHandler = (event) => {
         setSearchInput(event.target.value.toLowerCase().trim())
     }
-
     const searchFilter = recipes.filter(recipe => {
         return recipe.name.includes(searchInput)
     })
@@ -40,25 +36,20 @@ const Recipes = () => {
 
     return (
         <div className='recipes'>
-
             <h3>Search for recipe:</h3>
             <input type={'search'} onChange={searchInputHandler}></input>
 
             <div className='cards'>
                 {searchFilter.map((recipe) =>
-
                     <Card
+                        key={recipe.id}
                         id={recipe.id}
                         name={recipe.name}
                         image={recipe.image}
                         country={recipe.country}
-
-
                     />
-
                 )}
             </div>
-
         </div>
     );
 };

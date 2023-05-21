@@ -21,6 +21,7 @@
 .icon {
     padding-right: 1rem;
     cursor: pointer;
+    font-size: 24px;
 }
 
 .icon:hover {
@@ -31,4 +32,25 @@
     font-size: small;
     width: 80%;
     margin-left: 7rem;
+}
+
+/* ***Mobile settings for max-width:414px*** */
+@media screen and (max-width: 414px) {
+    .footer {
+        padding: 20px;
+    }
+
+    .footer p {
+        font-size: xx-small;
+        margin-left: 0;
+    }
+
+    .icons {
+        margin-left: 5rem;
+    }
+
+    .icon {
+        padding-right: 0.4rem;
+        font-size: 15px;
+    }
 }

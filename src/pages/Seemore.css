@@ -48,7 +48,6 @@
 .content1 #recipe-pic {
     max-width: 99%;
     margin-bottom: 20px;
-
 }
 
 .seemore .ingredients {
@@ -96,4 +95,25 @@ td {
 #instructions {
     text-align: justify;
     padding: 0 0.8rem 0 0.8rem;
+}
+
+/* ***Mobile settings for max-width:414px*** */
+@media screen and (max-width: 414px) {
+    .seemore {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content1 {
+        width: 340px;
+    }
+
+    .content2 {
+        width: 340px;
+        margin-top: 1rem;
+    }
+
+    .seemore button {
+        font-size: 10px;
+    }
 }

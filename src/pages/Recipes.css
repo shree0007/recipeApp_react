@@ -18,3 +18,21 @@
     padding: 0.5rem;
     margin-top: 1rem;
 }
+
+/* ***Mobile settings for max-width:414px*** */
+@media screen and (max-width: 414px) {
+    .recipes .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .recipes h3 {
+        font-size: 12px;
+    }
+
+    .recipes input {
+        width: 200px;
+        padding: 0.2rem;
+    }
+
+}
